@@ -11,10 +11,12 @@ else{
 
 int main()
 {
-	int n;
-	printf(" enter term you want\n");
+	int n,i;
+	printf(" enter upto which term you want\n");
 	scanf("%d",&n);
-	printf("%dth term is %d",n,fibo(n));
+	for(i=1;i<=n;i++){
+	printf(" %d ",fibo(i));
+	}
 	return 0;
 }
 
